@@ -53,7 +53,7 @@ class AndViewHelper extends AbstractViewHelper
         array $arguments,
         \Closure $renderChildrenClosure,
         RenderingContextInterface $renderingContext
-    ) {
+    ): bool {
         $result = true;
         foreach ($arguments['conditions'] as $condition) {
             $result &= (true == $condition);

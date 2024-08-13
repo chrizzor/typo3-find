@@ -61,7 +61,7 @@ class PageNumberForResultNumberViewHelper extends AbstractViewHelper
         array $arguments,
         \Closure $renderChildrenClosure,
         RenderingContextInterface $renderingContext
-    ) {
+    ): int {
         if (0 === $arguments['resultsPerPage']) {
             $arguments['resultsPerPage'] = self::DEFAULT_RESULTS_PER_PAGE;
         }

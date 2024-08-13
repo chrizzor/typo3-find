@@ -52,7 +52,7 @@ class OrViewHelper extends AbstractViewHelper
         array $arguments,
         \Closure $renderChildrenClosure,
         RenderingContextInterface $renderingContext
-    ) {
+    ): bool {
         $result = false;
         foreach ($arguments['conditions'] as $condition) {
             $result |= (true == $condition);
